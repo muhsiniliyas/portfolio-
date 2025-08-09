@@ -12,7 +12,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
       e.preventDefault();
-      document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+      document.querySelector(anchor.getAttribute('')).scrollIntoView({
         behavior: 'smooth'
       });
     });
@@ -84,4 +84,5 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     alert("Thank you! Your message has been sent.");
     this.reset();
   });
+
   
