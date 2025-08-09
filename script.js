@@ -9,7 +9,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
   });
   // Smooth scroll for CTA buttons
-document.querySelectorAll('[^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
       e.preventDefault();
       document.querySelector(anchor.getAttribute('')).scrollIntoView({
@@ -18,7 +18,7 @@ document.querySelectorAll('[^="#"]').forEach(anchor => {
     });
   });
   // Smooth Scroll for Anchor Links
-document.querySelectorAll('[^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
       document.querySelector(this.getAttribute("href")).scrollIntoView({
@@ -86,4 +86,5 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   });
 
   
+
 
