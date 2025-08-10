@@ -8,6 +8,13 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
       });
     });
   });
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+menuToggle.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
   // Smooth scroll for CTA buttons
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
@@ -86,5 +93,6 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   });
 
   
+
 
 
