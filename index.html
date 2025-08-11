@@ -245,11 +245,31 @@
       </div>
     </div>
   </section>
+  <!-- EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("Zp6mhYCWTXR98amaq"); // Your Public Key
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_fpe560w', 'template_y5k2k2w', this)
+      .then(function() {
+        alert('✅ Message Sent Successfully!');
+        document.getElementById('contactForm').reset();
+      }, function(error) {
+        alert('❌ Failed to send message. Please try again.\n' + JSON.stringify(error));
+      });
+  });
+</script>
   
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
