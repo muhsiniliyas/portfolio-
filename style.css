@@ -562,6 +562,45 @@ body {
     color: #000;
     box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
   }
+.about-section .about-content {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+  }
+  
+  .about-section .about-image img {
+    display: block;
+    margin: 0 auto; /* Center image horizontally */
+    border-radius: 50%;
+    max-width: 200px; /* Adjust size as needed */
+    box-shadow: 0 0 20px cyan; /* Keep neon effect */
+  }
+  
+  .about-section .about-text {
+    margin-top: 20px; /* Space between image and text */
+    max-width: 700px; /* Optional: limit text width for better readability */
+  }
+  .discussion-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .discussion-photo img {
+    width: 250px; /* adjust size */
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #0ff;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff, 0 0 60px #0ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .discussion-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+  }
   /* Skills Section Dark Theme */
 .skills-section {
     background: #0a0a0a;
@@ -835,5 +874,6 @@ body {
   }
 
   
+
 
 
