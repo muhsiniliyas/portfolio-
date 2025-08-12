@@ -181,6 +181,161 @@ nav ul li a {
     margin-bottom: 20px;
   }
 }
+.home-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  gap: 30px;
+}
+
+.home-content {
+  flex: 1 1 500px;
+}
+
+.home-image img {
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(0,255,255,0.8);
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.name span {
+  color: #00f5ff;
+  text-shadow: 0 0 10px #00f5ff;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 10px auto 20px auto;
+  font-size: 1.2rem;
+}
+
+/* Badges / Pills */
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.badge {
+  background: rgba(0,255,255,0.1);
+  border: 1px solid #00f5ff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  min-width: 200px; /* Equal size pills */
+  text-align: center;
+}
+
+/* Full Width Button */
+.full-width-btn {
+  display: block;
+  background: #00f5ff;
+  color: #000;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #00f5ff;
+}
+
+.full-width-btn:hover {
+  background: #00dbe0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.2rem;
+  }
+  .tagline {
+    font-size: 1.2rem;
+  }
+}
+/* Hero Section Name on Single Line */
+.name {
+  font-size: clamp(1.8rem, 4vw, 3rem); /* Adjusts based on screen size */
+  white-space: nowrap; /* Prevents line break */
+  text-align: center;
+}
+
+/* Tagline Centered with Bigger Window */
+.tagline {
+  max-width: 800px; /* Wider for desktop */
+  margin: 15px auto; /* Centers it */
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Bigger Pills in One Line */
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Allows wrapping if too small screen */
+  margin-top: 15px;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  min-width: 180px; /* Equal size */
+  text-align: center;
+}
+
+/* View My Work Full Width on Mobile */
+.work-btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 300px; /* Desktop limit */
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .work-btn {
+    max-width: 100%; /* Full width for mobile */
+  }
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centers horizontally */
+  justify-content: center;
+  text-align: center;
+  gap: 15px; /* Space between elements */
+}
+
+/* View My Work button centered under name */
+.work-btn {
+  display: block;
+  width: auto; /* Adjust width automatically */
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -874,6 +1029,7 @@ body {
   }
 
   
+
 
 
 
