@@ -336,6 +336,65 @@ nav ul li a {
   font-size: 1.1rem;
   margin-top: 10px;
 }
+/* Make description bigger and single line on large screens */
+.description {
+  font-size: 1.4rem; /* bigger text */
+  text-align: center;
+  white-space: nowrap; /* force single line */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1rem;
+}
+
+/* Pills styling */
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 1rem;
+  background: #f0f0f0;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  flex: 1; /* Equal width */
+  text-align: center;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+/* View My Work button full width */
+.work-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: #ff6600; /* Example color */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .description {
+    white-space: normal; /* allow wrap on mobile */
+    font-size: 1.2rem;
+  }
+
+  .badge {
+    flex: unset;
+    width: 100%;
+  }
+
+  .work-btn {
+    font-size: 1rem;
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1029,6 +1088,7 @@ body {
   }
 
   
+
 
 
 
